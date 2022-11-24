@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title> registration form</title>
+    <script>
+        function myFunction(){
+
+            var userr=document.forms["form"]["username"].value;
+            if (userr=="addmin"){
+                document.location.href="addminpage.html";
+            }
+            else if(userr=="user"){
+                document.location.href="userpage.html";
+            }
+            else{
+                document.location.href="jumb.html";
+            }
+
+        }
+        
+
+    </script>
+</head>
+<body >
+    <div class="container">
+        <div class="heading">registration</div>
+        <form class="myform" name="form">
+            <div class="card-detail">
+                <div class="cardbox">
+                    <span class="details">User Name</span>
+                    <input type="text" placeholder="Username" required id="sky" name="username">
+                
+                </div>
+                <div class="cardbox">
+                    <span class="details">Password</span>
+                    <input type="password" placeholder="password" required>
+                
+                </div>
+                
+                <div >
+                    <input type="checkbox" name="ok" required> ยอมรับข้อตกลง
+                </div>
+                
+            </div>
+            <div class="button">
+                <input type="button" value="login" onclick="myFunction()">
+            </div>
+            <div class="back">
+                 <a href="../index.html" >กลับไหนาแรก</a>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
